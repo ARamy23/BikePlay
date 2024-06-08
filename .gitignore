@@ -91,3 +91,4 @@ fastlane/test_output
 iOSInjectionProject/
 *.lock
 *.lock.json
+.DS_Store
