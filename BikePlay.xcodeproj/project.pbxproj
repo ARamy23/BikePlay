@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FAF46B2A20A15CDAE3C05E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC63A07D7FA6D4B30C4E6 /* ContentView.swift */; };
+		143B39B5A6CC5116966B9600 /* BikePlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F7E9CE243EBB5CEECFF22 /* BikePlayApp.swift */; };
+		27D8767E4C527323E8FEF8F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254F0F64C18BB050D04BC97D /* Assets.xcassets */; };
+		535447C4463AB229FD665F64 /* BikePlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388FF8BD571705FDF8C3EE37 /* BikePlayTests.swift */; };
+		8248FA901D61C7EDFBB3046A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2212B30C534D46C1A931F /* LaunchScreen.storyboard */; };
+		A70C30A19AC652D397F1FE62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E0FE528ABE59957BCEFFA2 /* Preview Assets.xcassets */; };
+		A71A24E9C88CAAD0B6FD63A0 /* TuistBundle+BikePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B501EA344C3515C5185556D /* TuistBundle+BikePlay.swift */; };
+		C91C4DA3F8146717148C9AB1 /* TuistAssets+BikePlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC07F1D3D3DB5C5CF6EFAB /* TuistAssets+BikePlay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B270FFD0B237CA1B179CF4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8038542F64EB6457A0FAEDED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335ECDFC79E24F0FE1229B14;
+			remoteInfo = BikePlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C4DB5556318E22CE3C02910 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8E840F981351F16E494466 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048B65EEA719A29DA599D7DC /* BikePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1817059F9D2BAB2049A69F5D /* BikePlayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BikePlayTests-Info.plist"; sourceTree = "<group>"; };
+		254F0F64C18BB050D04BC97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BCEC63A07D7FA6D4B30C4E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		388FF8BD571705FDF8C3EE37 /* BikePlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikePlayTests.swift; sourceTree = "<group>"; };
+		434F7E9CE243EBB5CEECFF22 /* BikePlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikePlayApp.swift; sourceTree = "<group>"; };
+		9B501EA344C3515C5185556D /* TuistBundle+BikePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+BikePlay.swift"; sourceTree = "<group>"; };
+		9FB2212B30C534D46C1A931F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0E0FE528ABE59957BCEFFA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7BC07F1D3D3DB5C5CF6EFAB /* TuistAssets+BikePlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+BikePlay.swift"; sourceTree = "<group>"; };
+		DE7FE95DF4171B6F38FC21D9 /* BikePlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BikePlay-Info.plist"; sourceTree = "<group>"; };
+		FADC91DCE05B279FF6916E9A /* BikePlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikePlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA9E4D2CCAA9175AB817EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCA4D1A32408F703F093CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019077CD7B0AA0F5ABF9775A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				6DF6FD8C80BDDE2E6297CA90 /* BikePlay */,
+				5BFA6CC5B70CBFBBB6AA060C /* Derived */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		41FBB80A3F51B682883FD691 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FE95DF4171B6F38FC21D9 /* BikePlay-Info.plist */,
+				1817059F9D2BAB2049A69F5D /* BikePlayTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		5BFA6CC5B70CBFBBB6AA060C /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				41FBB80A3F51B682883FD691 /* InfoPlists */,
+				6792134F5BB3D455A6B8C47D /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		661B16386A8B7030A094808A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0F2028259ED411D4F3F7920 /* Preview Content */,
+				254F0F64C18BB050D04BC97D /* Assets.xcassets */,
+				9FB2212B30C534D46C1A931F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6792134F5BB3D455A6B8C47D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC07F1D3D3DB5C5CF6EFAB /* TuistAssets+BikePlay.swift */,
+				9B501EA344C3515C5185556D /* TuistBundle+BikePlay.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6DF6FD8C80BDDE2E6297CA90 /* BikePlay */ = {
+			isa = PBXGroup;
+			children = (
+				661B16386A8B7030A094808A /* Resources */,
+				80EAA101420F386D56BDACCA /* Sources */,
+				C8287DA8E19E342ECB87CE45 /* Tests */,
+			);
+			path = BikePlay;
+			sourceTree = "<group>";
+		};
+		80EAA101420F386D56BDACCA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				434F7E9CE243EBB5CEECFF22 /* BikePlayApp.swift */,
+				2BCEC63A07D7FA6D4B30C4E6 /* ContentView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C0F2028259ED411D4F3F7920 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0E0FE528ABE59957BCEFFA2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8287DA8E19E342ECB87CE45 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				388FF8BD571705FDF8C3EE37 /* BikePlayTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D122F9DBAB2582CFE00B86D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048B65EEA719A29DA599D7DC /* BikePlay.app */,
+				FADC91DCE05B279FF6916E9A /* BikePlayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47E11538590E5444B15EB9D = {
+			isa = PBXGroup;
+			children = (
+				019077CD7B0AA0F5ABF9775A /* Project */,
+				D122F9DBAB2582CFE00B86D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		335ECDFC79E24F0FE1229B14 /* BikePlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8EECAF28A00551C22022C3 /* Build configuration list for PBXNativeTarget "BikePlay" */;
+			buildPhases = (
+				964D38867F8D40106DF7BCA6 /* Sources */,
+				8952E4DE2535684A3C165443 /* Resources */,
+				AD8E840F981351F16E494466 /* Embed Frameworks */,
+				7BCA4D1A32408F703F093CE0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BikePlay;
+			productName = BikePlay;
+			productReference = 048B65EEA719A29DA599D7DC /* BikePlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E04A749EE1E48B3C78C0827 /* BikePlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CFED6C0ACF73EF97DC7861 /* Build configuration list for PBXNativeTarget "BikePlayTests" */;
+			buildPhases = (
+				F1DF0639B77728758ED3546E /* Sources */,
+				9CA8A7D5BDE364559620EFFD /* Resources */,
+				7C4DB5556318E22CE3C02910 /* Embed Frameworks */,
+				3FA9E4D2CCAA9175AB817EC3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2029924C2C3370BCB29828B2 /* PBXTargetDependency */,
+			);
+			name = BikePlayTests;
+			productName = BikePlayTests;
+			productReference = FADC91DCE05B279FF6916E9A /* BikePlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8038542F64EB6457A0FAEDED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					8E04A749EE1E48B3C78C0827 = {
+						TestTargetID = 335ECDFC79E24F0FE1229B14;
+					};
+				};
+			};
+			buildConfigurationList = 3B53179EA21094DE81559E13 /* Build configuration list for PBXProject "BikePlay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F47E11538590E5444B15EB9D;
+			productRefGroup = D122F9DBAB2582CFE00B86D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				335ECDFC79E24F0FE1229B14 /* BikePlay */,
+				8E04A749EE1E48B3C78C0827 /* BikePlayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8952E4DE2535684A3C165443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D8767E4C527323E8FEF8F5 /* Assets.xcassets in Resources */,
+				8248FA901D61C7EDFBB3046A /* LaunchScreen.storyboard in Resources */,
+				A70C30A19AC652D397F1FE62 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8A7D5BDE364559620EFFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		964D38867F8D40106DF7BCA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143B39B5A6CC5116966B9600 /* BikePlayApp.swift in Sources */,
+				07FAF46B2A20A15CDAE3C05E /* ContentView.swift in Sources */,
+				C91C4DA3F8146717148C9AB1 /* TuistAssets+BikePlay.swift in Sources */,
+				A71A24E9C88CAAD0B6FD63A0 /* TuistBundle+BikePlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DF0639B77728758ED3546E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535447C4463AB229FD665F64 /* BikePlayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2029924C2C3370BCB29828B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BikePlay;
+			target = 335ECDFC79E24F0FE1229B14 /* BikePlay */;
+			targetProxy = 0B270FFD0B237CA1B179CF4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		133BD1F7D2D38353ACF18C68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/BikePlay-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.BikePlay;
+				PRODUCT_NAME = BikePlay;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C29A7D29ABDE150F7105616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/BikePlayTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.BikePlayTests;
+				PRODUCT_NAME = BikePlayTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikePlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BikePlay";
+				TEST_TARGET_NAME = BikePlay;
+			};
+			name = Release;
+		};
+		8CEA8E301348F40956FBAB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		98F2641CDF98EA130BB9C492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/BikePlay-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.BikePlay;
+				PRODUCT_NAME = BikePlay;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1105A416514C337B02EFE2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/BikePlayTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.BikePlayTests;
+				PRODUCT_NAME = BikePlayTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BikePlay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BikePlay";
+				TEST_TARGET_NAME = BikePlay;
+			};
+			name = Debug;
+		};
+		FEBBC9D5B218309DF11ECB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B53179EA21094DE81559E13 /* Build configuration list for PBXProject "BikePlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CEA8E301348F40956FBAB13 /* Debug */,
+				FEBBC9D5B218309DF11ECB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8EECAF28A00551C22022C3 /* Build configuration list for PBXNativeTarget "BikePlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F2641CDF98EA130BB9C492 /* Debug */,
+				133BD1F7D2D38353ACF18C68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CFED6C0ACF73EF97DC7861 /* Build configuration list for PBXNativeTarget "BikePlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1105A416514C337B02EFE2D /* Debug */,
+				1C29A7D29ABDE150F7105616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8038542F64EB6457A0FAEDED /* Project object */;
+}
