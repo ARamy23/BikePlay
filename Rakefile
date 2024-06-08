@@ -11,6 +11,7 @@ task :onboard do
     sh "curl https://mise.run | sh"
     puts "Installing Mise for Tuist"
     sh 'echo \'eval "$(~/.local/bin/mise activate zsh)"\' >> ~/.zshrc'
+    sh 'source ~/.zshrc'
     sh "mise install tuist@4.16.1"
     sh "mise use tuist@4.16.1"
     sh "tuist generate"
