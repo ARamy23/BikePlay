@@ -16,6 +16,12 @@ let package = Package(
     dependencies: [
         // Add your own dependencies here:
          .package(
-            url: "https://github.com/pointfreeco/swift-composable-architecture", from: "1.1.0"),
+            url: "https://github.com/pointfreeco/swift-composable-architecture",
+            from: "1.1.0"
+         ),
+         .package(
+            url: "https://github.com/mapbox/mapbox-navigation-ios.git",
+            from: "2.18.0"
+         )
     ]
 )
