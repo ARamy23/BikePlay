@@ -11,8 +11,21 @@ task :onboard do
     sh "curl https://mise.run | sh"
     puts "Installing Mise for Tuist"
     sh 'echo \'eval "$(~/.local/bin/mise activate zsh)"\' >> ~/.zshrc'
-    sh 'source ~/.zshrc'
-    sh "mise install tuist@4.16.1"
-    sh "mise use tuist@4.16.1"
-    sh "tuist generate"
+
+    # Create a temporary script
+    File.open('/tmp/temp_script.sh', 'w') do |file|
+        file.puts 'source ~/.zshrc'
+        file.puts 'mise install tuist@4.16.1'
+        file.puts 'mise use tuist@4.16.1'
+        file.puts 'tuist generate'
+    end
+
+    # Make the script executable
+    sh "chmod +x /tmp/temp_script.sh"
+
+    # Run the script using zsh
+    sh "zsh /tmp/temp_script.sh"
+
+    # Clean up
+    sh "rm /tmp/temp_script.sh"
 end
