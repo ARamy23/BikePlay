@@ -15,7 +15,9 @@ let project = Project(
             ),
             sources: ["BikePlay/Sources/**"],
             resources: ["BikePlay/Resources/**"],
-            dependencies: []
+            dependencies: [
+                .external(name: "ComposableArchitecture")
+            ]
         ),
         .target(
             name: "BikePlayTests",
