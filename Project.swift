@@ -17,7 +17,30 @@ let project = Project(
             resources: ["BikePlay/Resources/**"],
             dependencies: [
                 .external(name: "ComposableArchitecture"),
-                .external(name: "MapboxNavigation")
+                .xcframework(
+                    path: .relativeToRoot(
+                        "Packages/Mapbox/MapboxCommon.xcframework"
+                    ),
+                    status: .required
+                ),
+                .xcframework(
+                    path: .relativeToRoot(
+                        "Packages/Mapbox/MapboxCoreMaps.xcframework"
+                    ),
+                    status: .required
+                ),
+                .xcframework(
+                    path: .relativeToRoot(
+                        "Packages/Mapbox/MapboxMaps.xcframework"
+                    ),
+                    status: .required
+                ),
+                .xcframework(
+                    path: .relativeToRoot(
+                        "Packages/Mapbox/Turf.xcframework"
+                    ),
+                    status: .required
+                )
             ]
         ),
         .target(
