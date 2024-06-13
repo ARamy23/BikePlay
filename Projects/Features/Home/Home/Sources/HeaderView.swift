@@ -14,11 +14,15 @@ struct HeaderView: View {
                 HStack(alignment: .lastTextBaseline) {
                     Text("Hello, Ramy")
                         .font(.title2)
-                        .foregroundStyle(HomeAsset.Assets.black.swiftUIColor)
+                        .foregroundStyle(
+                            HomeAsset.Assets.black.swiftUIColor
+                        )
 
                     Text("Let's Ride!")
                         .font(.subheadline)
-                        .foregroundStyle(HomeAsset.Assets.subheadline.swiftUIColor)
+                        .foregroundStyle(
+                            HomeAsset.Assets.subheadline.swiftUIColor
+                        )
 
                     Spacer()
                 }
@@ -30,11 +34,19 @@ struct HeaderView: View {
                     .stroke(lineWidth: 4.0)
                     .frame(width: 40)
             }
-
-            Divider().foregroundStyle(HomeAsset.Assets.subheadline.swiftUIColor)
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 32)
+                .frame(maxWidth: .infinity)
+                .foregroundStyle(
+                    HomeAsset.Assets.background.swiftUIColor
+                )
+                .shadow(radius: 16)
+            )
+            .padding(.horizontal, 8)
 
             Spacer()
-        }.padding()
+        }
     }
 }
 
