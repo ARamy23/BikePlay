@@ -4,7 +4,12 @@ public struct HomeView: View {
     public init() {}
 
     public var body: some View {
-        Text("Home")
+        ZStack {
+            HomeAsset.Assets.background.swiftUIColor.ignoresSafeArea()
+            HeaderView()
+
+            
+        }
     }
 }
 
