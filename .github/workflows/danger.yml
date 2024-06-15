@@ -8,6 +8,7 @@ on:
 jobs:
   danger:
     runs-on: ubuntu-latest
+    environment: danger
     if: github.event_name  == 'pull_request' # if only run pull request when multiple trigger workflow
     steps:
     - uses: actions/checkout@v4
