@@ -21,11 +21,7 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile') }} # change your gemfile path
         restore-keys: |
           ${{ runner.os }}-gems-
-    - uses: MeilCli/danger-action@v6
-      with:
-        plugins_file: 'Gemfile'
-        install_path: 'vendor/bundle'
-        danger_file: 'Dangerfile'
-        danger_id: 'danger-pr'
-      env:
-        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+    - uses: danger/danger
+      run: 
+        export DANGER_GITHUB_API_TOKEN = ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+        bundle exec danger --verbose 
