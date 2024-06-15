@@ -1,0 +1,83 @@
+disabled_rules: # rule identifiers turned on by default to exclude from running
+  - opening_brace
+  - type_name
+  - unused_setter_value
+  - line_length
+  - trailing_whitespace
+  - switch_case_alignment
+  - vertical_parameter_alignment
+  - comment_spacing
+  - multiple_closures_with_trailing_closure
+  - void_function_in_ternary
+  - nesting
+  - implicitly_unwrapped_optional
+  - todo
+  - unused_capture_list
+  - type_body_length
+  - redundant_self # managed by SwiftFormat
+  - redundant_type # managed by SwiftFormat
+
+opt_in_rules:
+  - colon
+  - fatal_error_message
+  - implicitly_unwrapped_optional
+  - legacy_cggeometry_functions
+  - legacy_constant
+  - legacy_constructor
+  - legacy_nsgeometry_functions
+  - operator_usage_whitespace
+  - return_arrow_whitespace
+  - trailing_newline
+  - unused_optional_binding
+  - vertical_whitespace
+  - custom_rules
+
+excluded:
+  - Carthage
+  - Pods
+  - CAFUTests/*
+  - CAFUUITests/*
+  - Packages/Pulse/*
+  - Packages/PulseUI/*
+  - Packages/Alamofire/*
+  - Packages/lottie-ios/*
+  - Packages/PhoneNumberKit/*
+  - Packages/swift-snapshot-testing/*
+  - Packages/clevertap-geofence-ios/*
+  - Packages/clevertap-ios-sdk/*
+  - Packages/CTNotificationContent/*
+  - Packages/CTNotificationService/*
+  - Packages/firebase-ios-sdk/*
+  - Packages/Keys/*
+  - Packages/KeysInterfaces/*
+  - Packages/lottie-ios/*
+
+colon:
+  apply_to_dictionaries: false
+
+indentation: 4
+
+custom_rules:
+  injected_without_type_specification:
+    name: "Injected Property Without Type Specification"
+    regex: '@Injected\s*\(\\.[a-zA-Z_][a-zA-Z0-9_]*\)\s*(var\s+[a-zA-Z_][a-zA-Z0-9_]*\s*)$'
+    message: "@Injected property must specify its type explicitly."
+    severity: error
+    multiline: true
+  no_direct_snackbar_shared:
+    name: "NoDirectSnackbarShared"
+    message: "Avoid using `Snackbar.shared` directly. Declare `snackbar` using `@Injected(\\.snackbar)`."
+    regex: "\\bSnackbar\\.shared\\b"
+    severity: error
+  no_objcMembers:
+    name: "@objcMembers"
+    regex: "@objcMembers"
+    message: "Explicitly use @objc on each member you want to expose to Objective-C"
+    severity: error
+  no_direct_standard_out_logs:
+    name: "Writing log messages directly to standard out is disallowed"
+    regex: "(\\bprint|\\bdebugPrint|\\bdump|Swift\\.print|Swift\\.debugPrint|Swift\\.dump)\\s*\\("
+    match_kinds:
+      - identifier
+    message: "Don't commit `print(…)`, `debugPrint(…)`, or `dump(…)` as they write to standard out in release. Either log to a dedicated logging system or silence this warning in debug-only scenarios explicitly using `// swiftlint:disable:next no_direct_standard_out_logs`"
+    severity: warning
