@@ -20,5 +20,7 @@ jobs:
     - name: Run Danger
       run: |
         bundle
-        export DANGER_GITHUB_API_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        export DANGER_GITHUB_API_TOKEN=${{ secrets.DANGER_GITHUB_API_TOKEN }}
         bundle exec danger --verbose
+      env:
+        DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
