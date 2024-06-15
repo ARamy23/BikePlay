@@ -21,7 +21,6 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile') }} # change your gemfile path
         restore-keys: |
           ${{ runner.os }}-gems-
-    - uses: danger/danger
-      run: 
+    - run: 
         export DANGER_GITHUB_API_TOKEN = ${{ secrets.DANGER_GITHUB_API_TOKEN }}
         bundle exec danger --verbose 
