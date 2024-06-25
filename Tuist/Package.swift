@@ -6,7 +6,7 @@ import PackageDescription
 
     let packageSettings = PackageSettings(
         productTypes: [
-            "swift-composable-architecture": .framework,
+            "swift-composable-architecture": .framework
         ]
     )
 #endif
@@ -18,6 +18,10 @@ let package = Package(
          .package(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             from: "1.1.0"
+         ),
+         .package(
+            url: "https://github.com/mapbox/mapbox-navigation-ios.git",
+            from: "2.18.0"
          )
     ]
 )
